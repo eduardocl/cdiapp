@@ -1,25 +1,29 @@
 package com.ecl.trainning.cdi;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import javax.inject.Inject;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import br.gov.frameworkdemoiselle.junit.DemoiselleRunner;
 
 import com.ecl.trainning.cdi.bean.Order;
 import com.ecl.trainning.cdi.producer.OrderProducer;
 
-
+@RunWith(DemoiselleRunner.class)
 public class InitializerMethodsTest {
 
-	@Inject OrderProducer producer;
+	@Inject 
+	private OrderProducer producer;
 	
 	@Test
 	public void testInitializerMethod() {
-	   //I don't no why but producer is null!	
 	   Order order = producer.getOrder();
+	   assertNotNull(order);
 	   assertEquals("Shopping Chao", order.getShopName());
 	}
-	
 	
 }
