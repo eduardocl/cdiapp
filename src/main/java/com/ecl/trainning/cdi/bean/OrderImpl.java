@@ -28,5 +28,10 @@ public class OrderImpl implements Order{
 		return shopName;
 	}
 
+	public void setShopName(String name) {
+		this.shopName = name;
+	}
+	
+	
 	
 }
