@@ -1,7 +1,6 @@
 package com.ecl.trainning.cdi;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.*;
 
 import javax.inject.Inject;
 
@@ -10,20 +9,16 @@ import org.junit.runner.RunWith;
 
 import br.gov.frameworkdemoiselle.junit.DemoiselleRunner;
 
-import com.ecl.trainning.cdi.bean.Order;
-import com.ecl.trainning.cdi.producer.OrderProducer;
+import com.ecl.trainning.cdi.bean.InitializedBean;
 
 @RunWith(DemoiselleRunner.class)
 public class InitializerMethodsTest {
 
-	@Inject 
-	private OrderProducer producer;
+	@Inject private InitializedBean bean;
 	
 	@Test
-	public void testInitializerMethod() {
-	   Order order = producer.getOrder();
-	   assertNotNull(order);
-	   assertEquals("Shopping Chao", order.getShopName());
+	public void testInitializedBean() {
+		assertNotNull(bean.getOrder());
 	}
 	
 }

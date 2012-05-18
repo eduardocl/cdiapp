@@ -13,4 +13,10 @@ public class FakeOrder implements Order{
 		return "Fake Shop";
 	}
 
+	@Override
+	public void pay() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

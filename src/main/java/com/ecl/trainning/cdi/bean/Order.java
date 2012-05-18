@@ -7,4 +7,6 @@ public interface Order {
 	
 	public String getShopName();
 	
+	public void pay();
+	
 }

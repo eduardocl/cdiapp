@@ -16,8 +16,6 @@ public class OrderProducer {
 	@Inject
 	private Logger logger;
 	
-	private Order order;
-	
 	public OrderProducer() {}
 	
 	/**
@@ -41,19 +39,5 @@ public class OrderProducer {
 		logger.info("Producer method OrderProducer#generateFakeOrder()");
 		return new com.ecl.trainning.cdi.bean.FakeOrder();
 	}
-	
-	
-	@Inject 
-	public void setOrder(@MyOrder Order order) {
-		logger.info("executing initializer method");
-		((OrderImpl)order).setShopName("Shopping Chao");
-		this.order = order;
-	}
-	
-	
-	public Order getOrder() {
-		return this.order;
-	}
-	
 	
 }
