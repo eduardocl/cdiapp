@@ -1,6 +1,8 @@
 package com.ecl.trainning.cdi.bean;
 
+import javax.enterprise.inject.Model;
 
+@Model
 public class User {
 
 	private String name;
