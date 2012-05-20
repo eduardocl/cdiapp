@@ -7,7 +7,7 @@ public class LoginEvent {
 
 	private User user;
 	
-	public LoginEvent(User user) {
+	public LoginEvent() {
 		
 	}
 

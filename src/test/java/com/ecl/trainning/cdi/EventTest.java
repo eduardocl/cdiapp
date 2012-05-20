@@ -17,7 +17,7 @@ public class EventTest {
 	
 	@Test
 	public void testEvent() {
-		controller.logIn(new User("eduardocl", false));
+		controller.logIn();
 	}
 	
 	

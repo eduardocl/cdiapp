@@ -11,8 +11,8 @@ public class LoginController {
 
 	@Inject @Any Event<LoginEvent> loggedEvent;
 	
-	public void logIn(User user) {
-		loggedEvent.fire(new LoginEvent(user));
+	public void logIn() {
+		loggedEvent.fire(new LoginEvent());
 	}
 	
 }

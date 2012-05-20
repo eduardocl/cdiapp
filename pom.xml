@@ -32,34 +32,34 @@
 
 
 		<!-- Dependencies for Arquilliam -->
-		<dependency>
-			<groupId>org.jboss.arquillian</groupId>
-			<artifactId>arquillian-bom</artifactId>
-			<version>1.0.0.Final</version>
-			<scope>import</scope>
-			<type>pom</type>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.jboss.arquillian</groupId> -->
+<!-- 			<artifactId>arquillian-bom</artifactId> -->
+<!-- 			<version>1.0.0.Final</version> -->
+<!-- 			<scope>import</scope> -->
+<!-- 			<type>pom</type> -->
+<!-- 		</dependency> -->
 
-		<dependency>
-			<groupId>org.jboss.arquillian.junit</groupId>
-			<artifactId>arquillian-junit-container</artifactId>
-			<version>1.0.0.Final</version>
-			<scope>test</scope>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.jboss.arquillian.junit</groupId> -->
+<!-- 			<artifactId>arquillian-junit-container</artifactId> -->
+<!-- 			<version>1.0.0.Final</version> -->
+<!-- 			<scope>test</scope> -->
+<!-- 		</dependency> -->
 
 
-		<dependency>
-            <groupId>org.jboss.arquillian.container</groupId>
-            <artifactId>arquillian-jbossas-remote-6</artifactId>
-            <version>1.0.0.Alpha5</version>
-        </dependency>
+<!-- 		<dependency> -->
+<!--             <groupId>org.jboss.arquillian.container</groupId> -->
+<!--             <artifactId>arquillian-jbossas-remote-6</artifactId> -->
+<!--             <version>1.0.0.Alpha5</version> -->
+<!--         </dependency> -->
 
-        <dependency>
-            <groupId>org.jboss.jbossas</groupId>
-            <artifactId>jboss-as-client</artifactId>
-            <version>6.0.0.Final</version>
-            <type>pom</type>
-        </dependency>
+<!--         <dependency> -->
+<!--             <groupId>org.jboss.jbossas</groupId> -->
+<!--             <artifactId>jboss-as-client</artifactId> -->
+<!--             <version>6.0.0.Final</version> -->
+<!--             <type>pom</type> -->
+<!--         </dependency> -->
 
 	</dependencies>
 
